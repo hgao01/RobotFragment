@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--     -->
+
+<resources>
+    <string name="app_name">Robot Fragments</string>
+
+    <string name="introduction_slide_title">Introduction to Robot001</string>
+    <string name="introduction_slide_sub">This is a Robot001 app.</string>
+
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="com.sanfrancisco.robotfragment"
+android:versionCode="1"
+android:versionName="1.01" >
+
+<uses-sdk android:minSdkVersion="11" android:targetSdkVersion="19" />
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+   
+
+<application
+    android:icon="@drawable/ic_launcher"
+    android:label="Robot003"
+    android:allowBackup="true"
+    android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
+
+    <activity
+        android:name=".SplashScreen"
+        android:label="Robot001"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+
+    <activity
+        android:name=".IntroductionActivity"
+        android:label="Robot001"
+
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <intent-filter>
+            <action android:name="android.intent.action.INTRODUCTIONACTIVITY" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+
+
+
+    <activity
+        android:name=".MainActivity"
+        android:configChanges="orientation|screenSize"
+        android:label="Robot002"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
+        <intent-filter>
+            <action android:name="android.intent.action.MAINACTIVITY" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+
+</application>
+
+</manifest>

@@ -1,6 +1,4 @@
-/*
- *
- */
+
 package com.sanfrancisco.robotfragment;
 
 import android.os.Bundle;

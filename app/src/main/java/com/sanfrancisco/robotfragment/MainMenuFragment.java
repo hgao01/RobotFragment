@@ -1,4 +1,3 @@
-
 /*
  *
  */
@@ -13,16 +12,9 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 
-
 public class MainMenuFragment extends ListFragment {
 
-    OnMainMenuSelectedListener    mCallback;
-
-    // The container Activity must implement this interface so the frag can deliver messages
-    public interface OnMainMenuSelectedListener {
-        /** Called by MainMenuFragment when a list item is selected */
-        public void fragmentTransactionMgr(int position);
-    }
+    OnMainMenuSelectedListener mCallback;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -67,5 +59,13 @@ public class MainMenuFragment extends ListFragment {
         mCallback.fragmentTransactionMgr(position);
         // Android sets the item as checked to be highlighted when in two-pane layout
         getListView().setItemChecked(position, true);
+    }
+
+    // The container Activity must implement this interface so the frag can deliver messages
+    public interface OnMainMenuSelectedListener {
+        /**
+         * Called by MainMenuFragment when a list item is selected
+         */
+        public void fragmentTransactionMgr(int position);
     }
 }
